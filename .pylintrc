@@ -1,0 +1,19 @@
+[MAIN]
+# cv2 loads its bindings dynamically and ships no type stubs, so pylint
+# cannot introspect it. Tell pylint to treat every cv2 attribute as existing.
+generated-members=cv2.*
+
+[MESSAGES CONTROL]
+# Intentional for a single-file command-line tool with small service classes:
+#   too-many-lines          -> the whole program must live in one file
+#   too-few-public-methods  -> model wrappers expose one public method
+disable=
+    too-many-lines,
+    too-few-public-methods
+
+[DESIGN]
+max-args=10
+max-positional-arguments=10
+max-locals=25
+max-branches=20
+max-statements=100

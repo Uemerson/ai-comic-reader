@@ -1,0 +1,13 @@
+# Core dependencies (panel detection, OCR and report generation)
+numpy>=1.24
+opencv-python>=4.8
+pillow>=10.0
+# CPU build; use onnxruntime-gpu instead for CUDA acceleration
+onnxruntime>=1.16
+torch>=2.1
+transformers>=4.40
+ultralytics>=8.1
+huggingface_hub>=0.23
+
+# Optional: local GGUF LLM backend (uncomment to install)
+# llama-cpp-python>=0.3
